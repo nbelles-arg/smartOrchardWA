@@ -1,0 +1,9 @@
+parameter,value
+robot_count,2
+timesteps,100
+crop_quantity,3
+ready_timestep,0
+depot_row,2
+depot_column,0
+seed,42
+output_prefix,results/scenario1
