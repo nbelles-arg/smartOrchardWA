@@ -167,7 +167,7 @@ class Farm:
                     f"assigned to unknown depot {robot.depot}."
                 )
 
-        # Optimization: Pre-calculate all reachable cells from active depots (O(V+E))
+        # Pre-calculate all reachable cells from active depots (O(V+E))
         # This guarantees that if a crop is in this set, the robot can reach it and return.
         reachable_from_depot = {}
         for depot in set(r.depot for r in robots):

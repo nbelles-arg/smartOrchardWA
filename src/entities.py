@@ -193,7 +193,7 @@ class Robot:
                 self.position = self.current_path.pop(0)
 
             if self.position == self.depot:
-                # Validación para prevenir cajas fantasmas al regresar vacío
+                # Validation to protect  the Conservation Law
                 if self.has_crate:
                     self.state = RobotState.UNLOADING
                 else:
@@ -201,7 +201,7 @@ class Robot:
 
         # --- STATE: UNLOADING ---
         elif self.state == RobotState.UNLOADING:
-            # Regla: Contar la entrega solo si realmente se descarga
+            # Only count crate if it's unloaded
             self.has_crate = False
             self.state = RobotState.WAITING
             return 1

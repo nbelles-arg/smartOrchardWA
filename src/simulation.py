@@ -78,7 +78,7 @@ class Simulation:
         ax_totals.clear()
         ax_rate.clear()
 
-        # 1. Render Smooth Farm Map
+        # Render Smooth Farm Map
         # Define a color palette
         colors = {"T": "#F0F0F0", "C": "#A8E6CF",
                   "X": "#FF8B94", "D": "#a0c4ff"}
@@ -118,7 +118,7 @@ class Simulation:
         ax_map.invert_yaxis()  # Origin at top-left
         ax_map.axis('off')     # Hide raw coordinate axes for a cleaner look
 
-        # 2. Render Absolute Totals Chart
+        # Render Absolute Totals Chart
         ax_totals.plot(self.history["timestep"], self.history["delivered"],
                        label="Delivered", color="blue", lw=2)
         ax_totals.plot(self.history["timestep"], self.history["unharvested"],
@@ -131,7 +131,7 @@ class Simulation:
         ax_totals.grid(True, linestyle='--', alpha=0.6)
         ax_totals.legend()
 
-        # 3. Render Throughput Rate Chart
+        # Render Throughput Rate Chart
         ax_rate.plot(self.history["timestep"], self.history["throughput"],
                      label="Rate (Crates/Step)", color="purple", lw=2, linestyle='-.')
         ax_rate.set_title("Delivery Throughput")
@@ -146,7 +146,7 @@ class Simulation:
 
         if interactive:
             plt.ion()
-            # Optimisation: 1x3 layout for Map, Totals, and Rate
+            # 1x3 layout for Map, Totals, and Rate
             fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 
         for t in range(self.total_timesteps):

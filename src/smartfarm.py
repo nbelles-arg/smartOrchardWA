@@ -7,7 +7,15 @@ Run from the starter folder:
 
 Student name: Nicolas Belles
 Student ID: 24210773
-Sources acknowledged: COMP5005 Unit Materials, Python Standard Library, Matplotlib Documentation.
+Sources Acknowledged:
+- COMP5005 Unit Materials: Core structure and foundational programming concepts.
+- Python Standard Library & Matplotlib/Seaborn Documentation: Used for file I/O, data structures, and statistical visualizations.
+- Breadth-First Search (BFS) & Flood Fill Algorithms: Standard graph traversal theory applied for route planning and layout reachability validation.
+- Manhattan Distance Heuristic: Applied for search pruning and optimization during robot target selection.
+- Algorithms teorical soure are the followings:
+- Cormen, Thomas H., Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. 2022. Introduction to Algorithms. 4th ed. Cambridge, MA: MIT Press.
+- Russell, Stuart, and Peter Norvig. 2020. Artificial Intelligence: A Modern Approach. 4th ed. Hoboken, NJ: Pearson.
+- Static Code Analysis Tools: Pylint and VS Code integrated linting tools utilized for code style and PEP 8 compliance.
 """
 
 import csv
